@@ -1,7 +1,7 @@
 module.exports = {
-  logLevel: "debug",
+  logLevel: "info",
   entryPoints: ["src/index.tsx"],
   bundle: true,
-  target: ["es2020", "chrome58", "edge16", "firefox57", "node12", "safari11"],
+  target: ["es2020", "chrome58"],
   outfile: "dist/out.js",
 };
