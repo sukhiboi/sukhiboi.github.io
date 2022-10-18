@@ -11,7 +11,7 @@ require("esbuild").build({
         'node12',
         'safari11',],
     loader: {'.js': 'jsx'},
-    outfile: "docs/out.js"
+    outfile: "dist/out.js"
 }).catch((e) => {
     console.error(e)
     process.exit(1)

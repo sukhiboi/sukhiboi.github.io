@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Deploy
 
 on:
   push:
@@ -17,13 +17,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-      #        cache: 'yarn'
+          cache: 'yarn'
       - run: yarn install
-      - run: yarn build
+      - name: Build
+        run: yarn build && mv public/* dist
       - uses: actions/upload-artifact@v3
         with:
           name: sukhiboi-build
-          path: docs
+          path: dist
           retention-days: 1
 
   deploy:
@@ -33,15 +34,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
+      - uses: actions/configure-pages@v2
       - uses: actions/download-artifact@v3
         with:
           name: sukhiboi-build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v1
         with:
           path: '.'
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
