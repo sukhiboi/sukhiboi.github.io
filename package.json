@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "scripts/build.js"
+    "build": "scripts/build.js",
+    "watch": "scripts/watch.js"
   },
   "dependencies": {
     "esbuild": "^0.15.11",
