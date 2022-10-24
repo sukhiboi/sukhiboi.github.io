@@ -7,11 +7,17 @@ export interface ITagText {
 }
 
 const tagMap = {
-  h1: styled["h1"]``,
-  h2: styled["h2"]``,
-  h3: styled["h3"]``,
+  h1: styled["h1"]`
+    font-weight: 400;
+  `,
+  h2: styled["h2"]`
+    font-weight: 400;
+  `,
+  h3: styled["h3"]`
+    font-weight: 400;
+  `,
   h4: styled["h4"]`
-    font-weight: 100;
+    font-weight: 400;
   `,
   h5: styled["h5"]`
     font-weight: 100;

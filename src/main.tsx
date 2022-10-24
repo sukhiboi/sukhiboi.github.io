@@ -8,9 +8,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const GlobalStyles = createGlobalStyle`
   body {
     height: 100vh;
-    margin: 0 20%;
+    margin: 0 5%;
     padding: 0;
     background: ${lightTheme.background};
+    font-family: 'Roboto Mono', sans-serif;
   }
   
   #root {

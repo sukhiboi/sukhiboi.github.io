@@ -2,7 +2,6 @@ import TagText from "../TagText/TagText";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
-  height: 5%;
   border-bottom: 1px solid ${({ theme }) => theme.textPrimary};
 `;
 

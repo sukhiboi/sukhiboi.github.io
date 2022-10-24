@@ -2,7 +2,6 @@ import TagText from "../TagText/TagText";
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-  height: 5%;
   border-top: 1px solid ${({ theme }) => theme.textPrimary};
 `;
 
