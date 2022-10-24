@@ -4,7 +4,7 @@ import BlogCard from "../BlogCard";
 
 describe("Blog Card", () => {
   it("should render blog card", () => {
-    render(<BlogCard title={"Title"} content={"Content"} />);
+    render(<BlogCard title={"Title"} content={"Content"} id={"3"} />);
 
     expect(screen.getByText(/Title/)).toBeInTheDocument();
     expect(screen.getByText(/Content/)).toBeInTheDocument();

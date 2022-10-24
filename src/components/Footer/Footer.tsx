@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
 `;
 
 const Footer = () => (
-  <FooterContainer>
+  <FooterContainer data-testid={"footer"}>
     <TagText tag={"h4"} content={"Made with love by Sukhdev Singh"} />
   </FooterContainer>
 );

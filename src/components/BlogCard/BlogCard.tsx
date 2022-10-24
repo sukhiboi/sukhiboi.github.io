@@ -4,6 +4,7 @@ import BlogCardContent from "../BlogCardContent/BlogCardContent";
 import { FC } from "react";
 
 export interface IBlogCard {
+  id: string;
   title: string;
   content: string;
 }
@@ -11,11 +12,15 @@ export interface IBlogCard {
 const Card = styled.article`
   border-bottom: 1px solid ${({ theme }) => theme.textSecondary};
   padding: 4px 0 10px;
+
+  &:last-child {
+    border-bottom: none;
+  }
 `;
 
-const BlogCard: FC<IBlogCard> = ({ title, content }: IBlogCard) => {
+const BlogCard: FC<IBlogCard> = ({ id, title, content }: IBlogCard) => {
   return (
-    <Card>
+    <Card data-testid={`blog-card-${id}`}>
       <BlogCardTitle title={title} />
       <BlogCardContent content={content} />
     </Card>

@@ -6,5 +6,7 @@ describe("Home", () => {
   it("should render Home Page", () => {
     render(<Home />);
     expect(screen.getByTestId("header")).toBeInTheDocument();
+    expect(screen.getByTestId("blog-list")).toBeInTheDocument();
+    expect(screen.getByTestId("footer")).toBeInTheDocument();
   });
 });
