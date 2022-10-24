@@ -6,7 +6,7 @@ describe("Blog Card", () => {
   it("should render blog card", () => {
     render(<BlogCard title={"Title"} content={"Content"} />);
 
-    expect(screen.getByText("<h2>Title</h2>")).toBeInTheDocument();
-    expect(screen.getByText("<p>Content</p>")).toBeInTheDocument();
+    expect(screen.getByText(/Title/)).toBeInTheDocument();
+    expect(screen.getByText(/Content/)).toBeInTheDocument();
   });
 });

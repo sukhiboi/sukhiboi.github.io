@@ -16,13 +16,18 @@ const tagMap = {
   p: styled["p"]``,
 };
 
+const TagElement = styled.span`
+  color: ${({ theme }) => theme.textSecondary};
+  font-weight: 100;
+`;
+
 const TagText: FC<ITagText> = ({ tag, content }: ITagText) => {
   const Tag = tagMap[tag];
   return (
     <Tag>
-      {`<${tag}>`}
+      <TagElement>{`<${tag}>`}</TagElement>
       {content}
-      {`</${tag}>`}
+      <TagElement>{`</${tag}>`}</TagElement>
     </Tag>
   );
 };
