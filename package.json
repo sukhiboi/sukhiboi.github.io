@@ -11,7 +11,8 @@
     "test:coverage": "vitest run --coverage",
     "prettier": "prettier --write .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "create:component": "./scripts/createComponent.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
