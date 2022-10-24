@@ -6,6 +6,8 @@ export default {
   component: BlogPost,
 } as ComponentMeta<typeof BlogPost>;
 
-const Template: ComponentStory<typeof BlogPost> = () => <BlogPost />;
+const Template: ComponentStory<typeof BlogPost> = (args) => (
+  <BlogPost {...args} />
+);
 
-export const BasicBlogPost = Template.bind({});
+export const BasicBlogPost = Template.bind({}, { title: "Blog Title" });
