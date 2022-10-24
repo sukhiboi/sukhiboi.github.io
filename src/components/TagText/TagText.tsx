@@ -10,10 +10,18 @@ const tagMap = {
   h1: styled["h1"]``,
   h2: styled["h2"]``,
   h3: styled["h3"]``,
-  h4: styled["h4"]``,
-  h5: styled["h5"]``,
-  h6: styled["h6"]``,
-  p: styled["p"]``,
+  h4: styled["h4"]`
+    font-weight: 100;
+  `,
+  h5: styled["h5"]`
+    font-weight: 100;
+  `,
+  h6: styled["h6"]`
+    font-weight: 100;
+  `,
+  p: styled["p"]`
+    font-weight: 100;
+  `,
 };
 
 const TagElement = styled.span`
@@ -26,7 +34,7 @@ const TagText: FC<ITagText> = ({ tag, content }: ITagText) => {
   return (
     <Tag>
       <TagElement>{`<${tag}>`}</TagElement>
-      {` ${content} `}
+      {`${content}`}
       <TagElement>{`</${tag}>`}</TagElement>
     </Tag>
   );

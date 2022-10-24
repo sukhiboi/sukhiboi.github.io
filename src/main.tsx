@@ -7,9 +7,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const GlobalStyles = createGlobalStyle`
   body {
+    height: 100vh;
     margin: 0 20%;
     padding: 0;
     background: ${lightTheme.background};
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 `;
 

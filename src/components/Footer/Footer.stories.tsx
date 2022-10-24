@@ -6,4 +6,4 @@ export default {
   component: Footer,
 } as ComponentMeta<typeof Footer>;
 
-export const BasicHeader: ComponentStory<typeof Footer> = () => <Footer />;
+export const BasicFooter: ComponentStory<typeof Footer> = () => <Footer />;
