@@ -12,5 +12,5 @@ const Template: ComponentStory<typeof BlogCard> = (args) => (
 
 export const BasicBlogPost = Template.bind(
   {},
-  { title: "Blog Title", initialContent: "Some initial Content" }
+  { title: "Blog Title", content: "Some initial Content" }
 );

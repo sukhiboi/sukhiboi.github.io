@@ -1,11 +1,11 @@
 import BlogCardTitle from "../BlogCardTitle/BlogCardTitle";
 import styled from "styled-components";
-import BlogContent from "../BlogCardContent/BlogCardContent";
+import BlogCardContent from "../BlogCardContent/BlogCardContent";
 import { FC } from "react";
 
 export interface IBlogCard {
   title: string;
-  initialContent: string;
+  content: string;
 }
 
 const Card = styled.article`
@@ -13,11 +13,11 @@ const Card = styled.article`
   padding: 4px 0 10px;
 `;
 
-const BlogCard: FC<IBlogCard> = ({ title, initialContent }: IBlogCard) => {
+const BlogCard: FC<IBlogCard> = ({ title, content }: IBlogCard) => {
   return (
     <Card>
       <BlogCardTitle title={title} />
-      <BlogContent content={initialContent} />
+      <BlogCardContent content={content} />
     </Card>
   );
 };

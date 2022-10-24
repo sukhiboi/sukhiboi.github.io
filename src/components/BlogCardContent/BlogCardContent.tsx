@@ -1,4 +1,5 @@
 import { FC } from "react";
+import TagText from "../TagText/TagText";
 
 export interface IBlogCardContent {
   content: string;
@@ -6,6 +7,6 @@ export interface IBlogCardContent {
 
 const BlogCardContent: FC<IBlogCardContent> = ({
   content,
-}: IBlogCardContent) => <p>{content}</p>;
+}: IBlogCardContent) => <TagText tag={"p"} content={content} />;
 
 export default BlogCardContent;
