@@ -26,7 +26,7 @@ const TagText: FC<ITagText> = ({ tag, content }: ITagText) => {
   return (
     <Tag>
       <TagElement>{`<${tag}>`}</TagElement>
-      {content}
+      {` ${content} `}
       <TagElement>{`</${tag}>`}</TagElement>
     </Tag>
   );

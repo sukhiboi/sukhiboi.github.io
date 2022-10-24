@@ -1,10 +1,6 @@
 import { FC } from "react";
-import TagText from "../../components/TagText/TagText";
+import Header from "../../components/Header/Header";
 
-const Home: FC = () => (
-  <div>
-    <TagText tag={"h1"} content={"Sukhdev's Blog"} />
-  </div>
-);
+const Home: FC = () => <Header />;
 
 export default Home;
