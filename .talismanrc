@@ -2,5 +2,5 @@ fileignoreconfig:
   - filename: src/vite-env.d.ts
     checksum: 9c2ae9b11db645629df3b350633cdc6fac8a281a806f39c9c4b817373de19fa2
   - filename: yarn.lock
-    checksum: 3e35d832311ef69fd01a10aea5a43c7340acfcdf07b31991585b0accc0aa9ddd
+    checksum: f8b285dd104d53fa038862910ecd2a8e2ebdea427653a9ad337a651d28bd477c
 version: ""
