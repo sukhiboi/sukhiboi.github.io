@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #fff;
-    --text-color: #333;
+    --bg-color: #ADEFD1;
+    --text-color: #00203F;
 }
 
 * {
@@ -14,7 +14,7 @@ body {
     display: grid;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.8;
+    line-height: 2.2;
 }
 
 main {
@@ -28,6 +28,7 @@ main {
 
 h1 {
     font-size: 3rem;
+    line-height: 1.6;
 }
 
 .header-title-content {
@@ -61,6 +62,10 @@ a {
     border-radius: 4px;
 }
 
+hr {
+    border-color: var(--text-color);
+}
+
 ul {
     margin-left: 2rem;
     margin-bottom: 1rem;
@@ -83,6 +88,10 @@ ul {
 
     nav {
        margin-bottom: 0;
+    }
+
+    h1 {
+        line-height: inherit;
     }
 
 }

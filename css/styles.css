@@ -6,6 +6,10 @@ address {
   width: 100%;
 }
 
+address a {
+  text-align: left;
+}
+
 dt {
   margin-bottom: 1rem;
 }
