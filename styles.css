@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Ubuntu;
+  font-family: Arial, sans-serif;
   display: grid;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -24,7 +24,6 @@ main {
   gap: 2rem;
   margin: 0 auto;
 }
-
 
 h1 {
   font-size: 3rem;
