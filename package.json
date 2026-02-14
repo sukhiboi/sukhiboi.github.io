@@ -1,0 +1,10 @@
+{
+  "name": "sukhiboi",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "marked": "17.0.2"
+  }
+}

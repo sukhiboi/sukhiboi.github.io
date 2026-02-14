@@ -1,0 +1,14 @@
+.post-item {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    text-align: left;
+    text-decoration: none;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    align-items: center;
+}
+
+.post-item:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
