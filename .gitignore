@@ -52,5 +52,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#Intellij Idea
+# Intellij Idea
 .idea
+
+# npm
+node_modules
+
+# Build
+dist

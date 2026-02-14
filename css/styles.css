@@ -1,0 +1,29 @@
+address {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 1rem;
+  width: 100%;
+}
+
+dt {
+  margin-bottom: 1rem;
+}
+
+section ul:has(:nth-last-child(7)) {
+  columns: 3;
+}
+
+@media print {
+  footer {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  hr:last-of-type {
+    display: none;
+  }
+}
